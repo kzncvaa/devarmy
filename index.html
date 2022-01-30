@@ -17,6 +17,11 @@
             <div class="header__logo">
                 <img class="logo-img" src="assets/images/DevArmy.svg" alt="" style="opacity: 0.8;">
             </div>
+            <a href="#" id="toggle" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
             <!--            TODO: norm adaptiv...-->
             <div class="header__menu">
                 <a class="header__item" href="#works">
@@ -242,6 +247,59 @@
                     </div>
                 </div>
             </div>
+            <div class="service__horizontal">
+                <div>
+                    <h3 class="service__title">Нашi послуги</h3>
+                    <div class="service__text-wrapper">
+                        <p class="service__text">
+                            <!--                        Створюємо, iнтегруємо, автоматизуємо та пiдтримуємо-->
+                            Створюємо рiшення, якi допоможуть бренду та бiзнесу зробити прорив прямо зараз
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="right">
+                        <div class="service__list">
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/mobile.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">Мобільні застосунки</h3>
+                            </a>
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/webDesign.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">UX / UI</h3>
+                            </a>
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/develop.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">Веб розробка</h3>
+                            </a>
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/chatbot.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">Чат-боти</h3>
+                            </a>
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/support.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">Десктнопні додатки</h3>
+                            </a>
+                            <a class="service__item">
+                                <div class="service__img-wrapper">
+                                    <img src="assets/images/settings%202.svg" alt="" class="service__img">
+                                </div>
+                                <h3 class="service__subtitle">Тех пiдтримка</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--    <section class="whatwedo">
@@ -326,5 +384,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+<script>
+    const toggleBut = document.getElementById('toggle')
+    const navbarLink = document.getElementsByClassName('header__menu')[0]
+
+    toggleBut.addEventListener('click', ()=>{
+        navbarLink.classList.toggle('active')
+    })
+</script>
 </body>
 </html>
